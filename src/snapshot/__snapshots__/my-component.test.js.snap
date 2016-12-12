@@ -1,0 +1,10 @@
+exports[`test should be rendered correctly 1`] = `
+<section>
+  <header>
+    some title
+  </header>
+  <p>
+    some content
+  </p>
+</section>
+`;
