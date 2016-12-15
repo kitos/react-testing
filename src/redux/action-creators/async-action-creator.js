@@ -1,14 +1,14 @@
 export function requestTodos() {
     return {
         type: 'request_todos',
-    }
+    };
 }
 
 export function receiveTodos(todos) {
     return {
         type: 'receive_todos',
-        todos,
-    }
+        payload: todos,
+    };
 }
 
 export function fetchTodos() {
@@ -17,5 +17,5 @@ export function fetchTodos() {
         return fetch('/api/todos')
             .then(responce => responce.json())
             .then(todos => dispatch(receiveTodos(todos)))
-    }
+    };
 }
